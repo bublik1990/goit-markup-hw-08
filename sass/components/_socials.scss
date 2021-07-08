@@ -1,0 +1,17 @@
+.social-list {
+    display: flex;
+}
+
+.social__link {
+    display: block;
+    padding: 12px;
+    border-radius: 50%;
+    fill: currentColor;
+    @extend %animation;
+    transition-property: background-color;
+}
+
+.social__icon {
+    display: block;
+    color: currentColor;
+}

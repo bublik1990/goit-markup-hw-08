@@ -1,0 +1,35 @@
+.features {
+    font-size: 14px;
+    // padding-top: 94px;
+}
+
+// .features__list {
+//     display: flex;
+// }
+
+// .features__item {
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
+
+.features__thumb {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    height: 120px;
+    background-color: $mid-grey-color;
+}
+
+.features__title { 
+    font-weight: 700;
+    line-height: 1.14;
+    color: $first-text-color; 
+    text-transform: uppercase;
+    // margin-top: 30px;
+}
+
+.features__text {
+    // margin-top: 10px;
+    line-height: 1.71;
+} 

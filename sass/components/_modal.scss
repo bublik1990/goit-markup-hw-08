@@ -1,0 +1,198 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    background-color: $backdrop-with-opacity;
+    opacity: 1;
+    @extend %animation;
+    transition-property: opacity, visibility;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.25); 
+    opacity: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 44px 32px 36px 48px;
+    width: 528px;
+    background-color: $white-color;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    @extend %animation;
+    transition-property: transform, opacity;
+} 
+
+.modal__close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $backdrop-with-opacity;
+    border-radius: 50%;
+    background-color: $white-color;
+    cursor: pointer;
+}
+
+.modal__close-btn-svg {
+    @extend %animation;
+    transition-property: fill;
+
+    .modal__close-btn:focus &,
+    .modal__close-btn:hover & {
+        fill: $brand-color;
+    }
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $first-text-color
+}
+
+.modal__contact-form {
+    margin-top: 12px;
+}
+
+.field {
+    display: block; 
+}
+
+.modal__field {
+    &:not(:first-child) {
+        margin-top: 12px;
+    }
+}
+
+.field__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+.field__container {
+    display: block;
+    position: relative;
+}
+
+.field__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 40px;
+
+    &:focus {
+        outline-color: $brand-color;
+    }
+}
+
+.modal__field-input {
+    margin-top: 4px;
+}
+
+.field__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .field__input:focus + & {
+        fill: $brand-color;
+    }
+}
+
+.modal__field-icon {
+    margin-left: 12px;
+}
+
+.field__textarea {
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    font-size: 14px;
+
+    &::placeholder {
+        color: $placeholder-color;
+        font-size: 14px;
+    }
+}
+
+.field-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.modal__field-checkbox {
+    margin-top: 20px;
+}
+
+.field-checkbox__new {
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    border: 2px solid $first-text-color;
+
+    .field-checkbox__native:checked + & {
+        border: none;
+        background: url(../images/icons/icon-check.svg);
+        background-repeat: no-repeat;
+        background-color: $brand-color;
+        background-position-y: bottom;
+    }
+
+    .field-checkbox__native:focus + & {
+        border-color: $brand-color;
+    }
+}
+
+.modal__field-checkbox-new {
+    margin-right: 8px;
+}
+
+.field-checkbox__label {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.field-checkbox__policy {
+    display: inline-block;
+    line-height: .8em;
+    color: $brand-color;
+    border-bottom: 1px solid $brand-color;
+}
+
+.contact-form__button {
+    display: block;
+    color: $white-color;
+    background-color: $brand-color;
+    box-shadow: 0px 4px 4px 0px $button-shadow;
+    @extend %animation;
+    transition-property: background-color;
+
+    &:focus,
+    &:hover {
+        background-color: $brand-color-accent;
+    }
+}
+
+.modal__form-button {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}

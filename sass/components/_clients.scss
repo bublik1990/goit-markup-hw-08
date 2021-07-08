@@ -1,0 +1,36 @@
+// .clients__list {
+//     display: flex;
+//     margin-top: 50px;
+// }
+
+.clients__item {
+    // width: 170px;
+    height: 92px;
+    border: 1px solid $social-icon-color;
+    border-radius: 4px;
+    fill: $social-icon-color;
+    @extend %animation;
+    transition-property: border, fill;
+
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
+
+    &:focus,
+    &:hover {
+        border: 1px solid $brand-color;
+        fill: $brand-color;
+    }
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clients__logo {
+    fill: inherit;
+}

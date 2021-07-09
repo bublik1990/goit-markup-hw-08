@@ -62,6 +62,36 @@
 //     margin-right: 10px;
 // }
 
+.header__item {
+    
+
+    @media screen and (max-width: 767px) {
+        &:not(:first-child) {
+            margin-bottom: 32px;   
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;   
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.header__phone-item {
+    @media screen and (max-width: 767px) {
+        color: $brand-color;
+        font-size: 34px;
+    }
+    
+}
+
 .header__link {
     display: flex;
 

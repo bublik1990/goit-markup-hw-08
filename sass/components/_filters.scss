@@ -1,13 +1,24 @@
-// .filters-list {
-//     display: flex;
-//     justify-content: center;
-// }
+.filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -8px;
 
-// .filter {
-//     &:not(:last-child) {
-//         margin-right: 8px;
-//     }
-// }
+    @media screen and (min-width: 768px) {
+        justify-content: center;  
+    }
+}
+
+.filter {
+
+    margin-top: 8px;
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    // &:not(:nth-child(-n + 3)) {
+    //     margin-top: 8px;
+    // }
+}
 
 .filter__button {
     padding: 6px 22px;

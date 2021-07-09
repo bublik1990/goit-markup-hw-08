@@ -1,23 +1,58 @@
-// .portfolio {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-top: 50px;
-// }
+.portfolio {
 
-// .project {
-//     width: calc((100% - 60px) / 3);
+    // margin-top: 50px;
+    margin-top: 40px;
 
-//     &:not(:nth-child(3n)) {
-//         margin-right: 30px;
-//     }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+        margin-top: 30px;
+    }
+}
 
-//     &:not(:nth-last-child(-n + 3)) {
-//         margin-bottom: 30px;
-//     }
-// }
+.project {
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 30px) / 2);
+        margin-bottom: 30px;
+        
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 3);
+
+        margin-bottom: 30px;
+        
+        &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+    }
+    // width: calc((100% - 60px) / 3);
+
+    // &:not(:nth-child(3n)) {
+    //     margin-right: 30px;
+    // }
+
+    // &:not(:nth-last-child(-n + 3)) {
+    //     margin-bottom: 30px;
+    // }
+}
 
 .project__link {
-    display: block;
+    display: flex;
+    transition-property: box-shadow;
+    flex-direction: column;
+    height: 100%;
     @extend %animation;
     transition-property: box-shadow;
 
@@ -75,6 +110,11 @@
 .project__text {
     padding: 20px 24px;
     border: 1px solid $light-grey-color;
+    flex-grow: 1;
+    
+    @media screen and (min-width: 768px) {
+        // min-height: 146px;
+    }
 }
 
 .project__name {

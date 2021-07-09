@@ -67,7 +67,10 @@
 }
 
 .nav__container.is-open {
-    display: flex;
+    @media screen and (max-width: 767px) {
+        display: flex;
+    }
+    
 }
 
 .nav__list {

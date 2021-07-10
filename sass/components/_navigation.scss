@@ -4,7 +4,7 @@
     align-items: center;
     height: 60px;
 
-    @media screen  and (max-width: 767.999px) {
+    @media screen  and (max-width: 767px) {
         
     }
 
@@ -44,7 +44,7 @@
 .nav__container {
     display: none;
 
-    @media screen and (max-width: 767.999px) {
+    @media screen and (max-width: 767px) {
         justify-content: space-between;
         flex-direction: column;
         position: absolute;
@@ -67,7 +67,7 @@
 }
 
 .nav__container.is-open {
-    @media screen and (max-width: 767.999px) {
+    @media screen and (max-width: 767px) {
         display: flex;
     }
     
@@ -85,7 +85,7 @@
 }
 
 .nav__item {
-    @media screen and (max-width: 767.999px) {
+    @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 32px;
         }

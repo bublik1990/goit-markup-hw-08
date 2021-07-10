@@ -17,7 +17,7 @@
 
 
 
-    @media screen and (max-width: 767.999px) {
+    @media screen and (max-width: 767px) {
 
         &:nth-child(odd) {
             margin-right: 30px;
@@ -29,7 +29,7 @@
 
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199.999px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 60px) / 3);
 
         &:not(:nth-child(3n)) {

@@ -124,13 +124,10 @@ li {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   font-weight: 500;
   letter-spacing: 0.02em;
-}
-
-.header__container {
-  position: relative;
 }
 
 .header__logo {
@@ -337,6 +334,7 @@ li {
 
 .nav__socials {
   display: flex;
+  flex-wrap: wrap;
   color: #2196F3;
   margin-top: 64px;
 }

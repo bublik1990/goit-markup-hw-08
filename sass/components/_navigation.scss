@@ -137,6 +137,7 @@
 
 .nav__socials {
     display: flex;
+    flex-wrap: wrap;
     color: $brand-color;
     margin-top: 64px;
 

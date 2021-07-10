@@ -1,11 +1,12 @@
 .header {
+    position: relative;
     border-bottom: 1px solid $light-grey-color2;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
 
 .header__container {
-    position: relative;
+    
     // display: flex;
     // justify-content: space-between;
     // align-items: center;

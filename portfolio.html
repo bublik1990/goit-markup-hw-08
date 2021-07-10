@@ -22,7 +22,7 @@
         <div class="header__container container">
             <nav class="nav">
                 <a class="nav__logo header__logo" href="./index.html"><span>Web</span>Studio</a>
-                <button class="nav__button" type="button" aria-expanded="false" data-menu-open>
+                <button class="nav__button" type="button" aria-label="Открыть мобильное меню" aria-expanded="false" data-menu-open>
                     <svg class="nav__menu" width="40" height="40" aria-label="Открыть мобильное меню">
                         <use href="./images/icons.svg#menu-open"></use>
                     </svg>
@@ -67,8 +67,8 @@
                             <li class="nav__social-link"><a href="#">LinkedIn</a></li>
                         </ul>
                     </div>
-                    <button class="nav__button nav__button-close" type="button" aria-expanded="false" data-menu-close>
-                        <svg class="nav__menu-close" width="19" height="19" aria-label="Открыть мобильное меню">
+                    <button class="nav__button nav__button-close" type="button" aria-label="Закрыть мобильное меню" aria-expanded="false" data-menu-close>
+                        <svg class="nav__menu-close" width="19" height="19" aria-label="Закрыть мобильное меню">
                             <use href="./images/icons.svg#menu-close"></use>
                         </svg>
                     </button>
@@ -83,11 +83,11 @@
             <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1> <!-- скрытый заголовок -->
                 <ul class="filters-list">
-                    <li class="filter"><button class="filter__button">Все</button></li>
-                    <li class="filter"><button class="filter__button">Веб-сайты</button></li>
-                    <li class="filter"><button class="filter__button">Приложения</button></li>
-                    <li class="filter"><button class="filter__button">Дизайн</button></li>
-                    <li class="filter"><button class="filter__button">Маркетинг</button></li>
+                    <li class="filter"><button class="filter__button" aria-label="Все">Все</button></li>
+                    <li class="filter"><button class="filter__button" aria-label="Веб-сайты">Веб-сайты</button></li>
+                    <li class="filter"><button class="filter__button" aria-label="Приложения">Приложения</button></li>
+                    <li class="filter"><button class="filter__button" aria-label="Дизайн">Дизайн</button></li>
+                    <li class="filter"><button class="filter__button" aria-label="Маркетинг">Маркетинг</button></li>
                 </ul>
                 <ul class="portfolio">
 
@@ -306,7 +306,7 @@
                 <p class="footer__subscribe-text">Подпишитесь на рассылку</p>
                 <form class="footer__subscribe-form">
                     <input class="footer__subscribe-input" id="email" name="email" type="text" placeholder="E-mail">
-                    <button class="footer__subscribe-button button" type="submit">Подписаться</button>
+                    <button class="footer__subscribe-button button" aria-label="Подписаться" type="submit">Подписаться</button>
                 </form>
             </div>
         </div>

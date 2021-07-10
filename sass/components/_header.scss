@@ -37,7 +37,7 @@
     
     font-size: 24px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.999px) {
         flex-direction: column-reverse;
     }
 
@@ -45,7 +45,7 @@
         font-size: 12px;  
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.999px) {
         flex-direction: column;
     }
 
@@ -65,12 +65,12 @@
 .header__item {
     
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.999px) {
         &:not(:first-child) {
             margin-bottom: 32px;   
         }
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.999px) {
         &:not(:last-child) {
             margin-bottom: 10px;   
         }
@@ -85,7 +85,7 @@
 }
 
 .header__phone-item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.999px) {
         color: $brand-color;
         font-size: 34px;
     }

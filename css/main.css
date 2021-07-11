@@ -243,6 +243,7 @@ li {
 
 .nav__container {
   display: none;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -1214,7 +1215,6 @@ li {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
     margin-top: 30px;
   }
 }
@@ -1228,7 +1228,9 @@ li {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project {
     width: calc((100% - 30px) / 2);
-    margin-bottom: 30px;
+  }
+  .project:nth-child(n + 3) {
+    margin-top: 30px;
   }
   .project:nth-child(odd) {
     margin-right: 30px;

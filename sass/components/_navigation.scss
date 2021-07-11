@@ -43,6 +43,7 @@
 
 .nav__container {
     display: none;
+    z-index: 1;
 
     @media screen and (max-width: 767px) {
         justify-content: space-between;
